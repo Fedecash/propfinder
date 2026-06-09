@@ -17,7 +17,7 @@ router.post('/', async (req, res) => {
 
     res.json({
       ...result.rows[0],
-      link: `http://localhost:3000/ficha/${codigo}`
+      link: `https://propfinder-kappa.vercel.app/ficha/${codigo}`
     });
   } catch (err) {
     console.error(err);
