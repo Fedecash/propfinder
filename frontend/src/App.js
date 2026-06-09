@@ -2,8 +2,7 @@ import { useState, useEffect } from 'react';
 import Ficha from './Ficha';
 import axios from 'axios';
 
-const API = 'http://localhost:3001/api';
-
+const API = 'https://propfinder-production-63e1.up.railway.app/api';
 function Badge({ tipo }) {
   if (!tipo) return null;
   return (
