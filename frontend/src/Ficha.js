@@ -49,4 +49,14 @@ export default function Ficha({ codigo }) {
             <p style={{color:'#666', fontSize:'14px', marginBottom:'12px'}}>📍 {prop.zona}</p>
             <p style={{fontSize:'20px', fontWeight:'600', marginBottom:'12px'}}>USD {prop.precio && prop.precio.toLocaleString()}</p>
             <div style={{display:'grid', gridTemplateColumns:'1fr 1fr', gap:'8px', marginBottom:'16px'}}>
-              {prop.m2 && <div style={{background:'#f3f
+              {prop.m2 && <div style={{background:'#f3f4f6', borderRadius:'8px', padding:'8px'}}><p style={{fontSize:'12px', color:'#999'}}>Superficie</p><p style={{fontWeight:'500'}}>{prop.m2} m2</p></div>}
+              {prop.ambientes && <div style={{background:'#f3f4f6', borderRadius:'8px', padding:'8px'}}><p style={{fontSize:'12px', color:'#999'}}>Ambientes</p><p style={{fontWeight:'500'}}>{prop.ambientes}</p></div>}
+              {prop.antiguedad && <div style={{background:'#f3f4f6', borderRadius:'8px', padding:'8px'}}><p style={{fontSize:'12px', color:'#999'}}>Antiguedad</p><p style={{fontWeight:'500'}}>{prop.antiguedad} anos</p></div>}
+              {prop.banos && <div style={{background:'#f3f4f6', borderRadius:'8px', padding:'8px'}}><p style={{fontSize:'12px', color:'#999'}}>Banos</p><p style={{fontWeight:'500'}}>{prop.banos}</p></div>}
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
